@@ -1,0 +1,3 @@
+export const ADD_TO_CART = 'ADD TO CART';
+export const DELETE_PRODUCT_CART = 'DELETE TO CART';
+export const CHANGE_MESSAGE = 'CHANGE_MESSAGE';
