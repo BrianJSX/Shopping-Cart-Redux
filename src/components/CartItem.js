@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import * as Message from '../contants/Message';
 
 class CartItem extends Component {
 
     render() {
         let { cart } = this.props;
+
         return (
             <tr>
                 <td>{cart.product.id}</td>
@@ -23,6 +25,7 @@ class CartItem extends Component {
 
     onDeleteProduct = (id) => {
         this.props.onDeleteProduct(id);
+        this.props.onChangeMessage(Message.MSG_DELETE_PRODUCT_IN_CART_SUCCESS);
     }
     
 }

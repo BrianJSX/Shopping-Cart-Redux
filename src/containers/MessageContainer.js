@@ -10,6 +10,7 @@ class MessageContainer extends Component {
         );
     }
 }
+
 const mapStateToProps = (state) => {
     return {
         messages: state.messages

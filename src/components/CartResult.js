@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
 class CartResult extends Component {
+
     render() {
+        let {total} = this.props;
         return (
             <div className="row">
                 <div className="col-md-8">
@@ -11,7 +13,7 @@ class CartResult extends Component {
                         <b>Tổng tiền</b>
                     </div>
                     <div className="col-md-4">
-                        $15
+                        {total}
                     </div>
                     <div className="col-md-4">
                         <button type="button" className="btn btn-primary">Thanh toán</button>
@@ -20,6 +22,7 @@ class CartResult extends Component {
             </div>
         );
     }
+
 }
 
 export default CartResult;
